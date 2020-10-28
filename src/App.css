@@ -9,7 +9,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f4f3ee;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,4 +30,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.webHeader {
+  background-color: #463f3a;
+}
+
+.myName {
+  color: white;
 }
