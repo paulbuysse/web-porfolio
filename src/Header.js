@@ -42,7 +42,7 @@ function Header() {
     //     from: { opacity: 0 },
     //     enter: { opacity: 1 },
     //     leave: { opacity: 0 },
-    //     config: config.molasses,
+    //     config: config.molasses
     // })
     // useEffect(() => void setInterval(() => setIndex(state => (state + 1) % 4), 2000), [])
 
