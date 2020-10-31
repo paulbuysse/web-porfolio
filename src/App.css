@@ -34,8 +34,20 @@
 
 .webHeader {
   background-color: #463f3a;
+  height: 10em;
 }
 
 .myName {
+  color: white;
+  font-size: 75px;
+  float: left;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 50%;
+}
+
+.contact {
   color: white;
 }
