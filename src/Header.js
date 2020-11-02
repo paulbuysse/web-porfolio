@@ -7,8 +7,8 @@ function Header() {
             <h1 className="myName">Paul Buysse</h1>
 
             <div className="contact">
-                <p>paulbuysse001@gmail.com</p>
-                <i class="fa fa-github"></i>
+                <p>Github</p>
+                <p>LinkedIn</p>
             </div>
         </div>
     )
