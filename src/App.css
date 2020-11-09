@@ -54,20 +54,16 @@
 
 .bg {
   position: absolute;
-  /* margin-top: 5%;
-  margin-left: 9%;
-  margin-right: auto;
-  margin-bottom: auto;
-  width: 82%;
-  height: 60%; */
-  will-change: opacity;
-}
-
-.imgSlide {
   margin-top: 5%;
   margin-left: 9%;
   margin-right: auto;
   margin-bottom: auto;
   width: 82%;
   height: 60%;
+  will-change: opacity;
+}
+
+.imgSlide {
+  width: 100%;
+  height: 100%;
 }
