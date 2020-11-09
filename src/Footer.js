@@ -25,7 +25,7 @@ const Footer = () => {
         <animated.div
             key={key}
             class="bg"
-            style={{ ...props, backgroundImage: `${item.url}` }}
+            style={{ ...props, backgroundColor: "#222" }}
         >
             <img className="imgSlide"
              src={item.url}
