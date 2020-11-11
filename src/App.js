@@ -12,10 +12,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Footer />
         <header className="App-header">
           <Router>
-            <Route path="/projects" component={Projects} />
+            <Route exact path="/" component={Footer} />
+            <Route exact path="/projects" component={Projects} />
           </Router>
 
         </header>

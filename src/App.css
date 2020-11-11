@@ -78,3 +78,27 @@
   color: white;
   margin-top: -5%;
 }
+
+.projectList {
+  color: white;
+  background-color: #8a817c;
+  width: 75%;
+  margin: 2em;
+}
+
+.leftPic {
+  float: left;
+  margin: 10px;
+  height: 40%;
+  width: 40%;
+}
+
+.rightPic {
+  float: right;
+  height: 40%;
+  width: 40%;
+}
+
+.projectObject {
+  margin: 100px;
+}
