@@ -4,10 +4,10 @@ import { useTransition, animated, config } from 'react-spring'
 import './App.css'
 
 const slides = [
-    { id: 0, url: 'https://i.imgur.com/j6H8gxq.jpg', name: 'Hotdog' },
-    { id: 1, url: 'https://i.imgur.com/StV946k.jpg', name: 'Burger' },
-    { id: 2, url: 'https://i.imgur.com/YBZacyX.jpg', name: 'Pizza' },
-    { id: 3, url: 'https://i.imgur.com/bqUT4kP.jpg', name: 'Pie' },
+    { id: 0, url: 'https://imgur.com/oTqu0xQ.jpg', name: 'Hotdog' },
+    { id: 1, url: 'https://imgur.com/Lk19zsz.jpg', name: 'Burger' },
+    { id: 2, url: 'https://imgur.com/mGcrMF7.jpg', name: 'Pizza' },
+    { id: 3, url: 'https://imgur.com/m77Ahdi.jpg', name: 'Pie' },
 ]
 
 const Footer = () => {
@@ -27,13 +27,14 @@ const Footer = () => {
             class="bg"
             style={{ ...props, backgroundColor: "#222" }}
         >
-            <img className="imgSlide"
-             src={item.url}
-             onMouseEnter={() => setTextHover(true)}
-             onMouseLeave={() => setTextHover(false)} />
+            <img
+                className="imgSlide"
+                src={`${item.url}`}
+                onMouseEnter={() => setTextHover(true)}
+                onMouseLeave={() => setTextHover(false)} />
 
-             {textHover && <p className="onHover">{item.name}</p>}
-            
+            {textHover && <p className="onHover">{item.name}</p>}
+
         </animated.div>
     ))
 }

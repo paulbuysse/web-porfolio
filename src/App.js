@@ -3,8 +3,9 @@ import logo from './logo.svg';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 
-import Header from './Header.js'
-import Footer from './Footer.js'
+import Header from './Header.js';
+import Footer from './Footer.js';
+import Projects from './Projects.js';
 
 class App extends Component {
   render() {
@@ -13,7 +14,10 @@ class App extends Component {
         <Header />
         <Footer />
         <header className="App-header">
-          
+          <Router>
+            <Route path="/projects" component={Projects} />
+          </Router>
+
         </header>
       </div>
     );
