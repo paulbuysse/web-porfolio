@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { useTransition, animated, config } from 'react-spring'
 import './App.css'
 
+//contains picture info
 const slides = [
     { id: 0, url: 'https://imgur.com/oTqu0xQ.jpg', name: 'Hotdog' },
     { id: 1, url: 'https://imgur.com/Lk19zsz.jpg', name: 'Burger' },
