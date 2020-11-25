@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 
+//component imports
 import Header from './Header.js';
 import Footer from './Footer.js';
 import Projects from './Projects.js';
