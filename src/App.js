@@ -14,9 +14,10 @@ class App extends Component {
       <div className="App">
         <Header />
         <SlideShow />
+        <Projects />
         <header className="App-header">
           <Router>
-            <Route exact path="/projects" component={Projects} />
+            
           </Router>
 
         </header>

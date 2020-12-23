@@ -23,20 +23,23 @@ const SlideShow = () => {
     })
     useEffect(() => void setInterval(() => set(state => (state + 1) % 4), 5000), [])
     return transitions.map(({ item, props, key }) => (
-        <animated.div
-            key={key}
-            class="bg"
-            style={{ ...props, backgroundColor: "#222" }}
-        >
-            {textHover && <p className="onHover">{item.name}</p>}
+        <div className="slideShowDiv">
+            <animated.div
+                key={key}
+                class="bg"
+                style={{ ...props, backgroundColor: "#222" }}
+            >
+                {textHover && <p className="onHover">{item.name}</p>}
 
-            <img
-                className="imgSlide"
-                src={`${item.url}`}
-                onMouseEnter={() => setTextHover(true)}
-                onMouseLeave={() => setTextHover(false)} />
+                <img
+                    className="imgSlide"
+                    src={`${item.url}`}
+                    onMouseEnter={() => setTextHover(true)}
+                    onMouseLeave={() => setTextHover(false)} />
 
-        </animated.div>
+            </animated.div>
+
+        </div>
     ))
 }
 
