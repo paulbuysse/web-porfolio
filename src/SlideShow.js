@@ -11,7 +11,7 @@ const slides = [
     { id: 3, url: 'https://imgur.com/m77Ahdi.jpg', name: 'Pie' },
 ]
 
-const Footer = () => {
+const SlideShow = () => {
     const [textHover, setTextHover] = useState(false)
 
     const [index, set] = useState(0)
@@ -28,17 +28,16 @@ const Footer = () => {
             class="bg"
             style={{ ...props, backgroundColor: "#222" }}
         >
+            {textHover && <p className="onHover">{item.name}</p>}
+
             <img
                 className="imgSlide"
                 src={`${item.url}`}
                 onMouseEnter={() => setTextHover(true)}
                 onMouseLeave={() => setTextHover(false)} />
 
-            {textHover && <p className="onHover">{item.name}</p>}
-
         </animated.div>
     ))
 }
 
-//render(<Footer />, document.getElementById('root'))
-export default Footer;
+export default SlideShow;

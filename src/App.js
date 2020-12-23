@@ -5,7 +5,7 @@ import './App.css';
 
 //component imports
 import Header from './Header.js';
-import Footer from './Footer.js';
+import SlideShow from './SlideShow.js';
 import Projects from './Projects.js';
 
 class App extends Component {
@@ -13,9 +13,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <SlideShow />
         <header className="App-header">
           <Router>
-            <Route exact path="/" component={Footer} />
             <Route exact path="/projects" component={Projects} />
           </Router>
 
