@@ -1,4 +1,5 @@
 import React, { Component, useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './App.css';
 
 function Header() {
@@ -9,6 +10,7 @@ function Header() {
             <div className="contact">
                 <p>Github</p>
                 <p>LinkedIn</p>
+                <FontAwesomeIcon icon={["fal", "coffee"]} />
             </div>
         </div>
     )
