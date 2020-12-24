@@ -13,11 +13,12 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <div className="divNav">#</div>
         <SlideShow />
         <Projects />
         <header className="App-header">
           <Router>
-            
+
           </Router>
 
         </header>
